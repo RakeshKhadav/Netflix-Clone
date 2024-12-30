@@ -131,7 +131,7 @@ nav button ,select {
     justify-content: center;
     align-items: center;
     max-width: 70vw;
-    height: 55vh;
+    height: 70vh;
     margin: auto;
     color: white;
 }
@@ -159,4 +159,36 @@ nav button ,select {
 }
 .first > div :nth-child(2) {
     font-size: 20px;
+}
+.third img {
+    width: 32vw;
+}
+.third video {
+    width: 400px;
+    position: absolute;
+    top: 28px;
+    right: 52px;
+}
+.faq {
+    color: white;
+    background-color: black;
+    padding: 34px;
+    font-size: 24px;
+}
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+.faqbox:hover {
+    background-color: #414141;
+}
+.faqbox {
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 24px 18px;
+    width: 70vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
 }
