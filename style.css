@@ -192,3 +192,28 @@ nav button ,select {
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
+.sign {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+}
+.sign span {
+    font-size: 16px;
+}
+.sign input {
+    padding: 10px 110px 10px 14px;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.5);
+    color: white;
+}
+.sign button {
+    padding: 7px 20px;
+    font-weight: 500;
+}
