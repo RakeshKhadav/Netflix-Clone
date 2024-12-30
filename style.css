@@ -42,6 +42,10 @@ nav button ,select {
     position: relative;
     z-index: 10;
 }
+.nav-div {
+    display: flex;
+    gap: 12px;
+}
 .hero {
     height: calc(100% - 62px);
     display: flex;
@@ -78,9 +82,10 @@ nav button ,select {
 }
 .btn {
     padding: 3px 8px;
-    font-weight: bold;
+    font-weight: 500;
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 .hero-buttons {
     display: flex;
@@ -94,16 +99,64 @@ nav button ,select {
     padding: 3px 24px;
     font-size: 20px;
     border-radius: 4px;
+    font-weight: 400;
 }
 .main input {
-    padding: 7px 101px 8px 14px;
-    font-weight: 900;
-    font-size: 12px;
+    padding: 6.5px 110px 6.5px 14px;
+    font-weight: 400;
+    font-size: 15px;
     border-radius: 4px;
     background-color: rgba(23,23,23,0.7);
     border: 1px solid rgba(246,238,238,0.5);
+    color: white;
 }
 .btn-red-sm {
     background-color: red;
     color: white;
+    border-radius: 4px;
+    font-weight: 400;
+}
+.select-lang {
+    padding: 2px 22px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.5);
+    cursor: pointer;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 55vh;
+    margin: auto;
+    color: white;
+}
+.secImg {
+    position: relative;
+}
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 30vw;
+}
+.first > div {
+    display: flex;
+    flex-direction: column;
+}
+.first > div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2) {
+    font-size: 20px;
 }
