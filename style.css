@@ -25,7 +25,7 @@ body {
     top: 0;
 }
 nav {
-    height: 62px;
+    height: 100px;
     width: 60vw;
     margin: auto;
     display: flex;
@@ -34,7 +34,7 @@ nav {
 }
 nav img {
     color: red;
-    width: 114px;
+    width: 133px;
     position: relative;
     z-index: 10;
 }
@@ -47,7 +47,7 @@ nav button ,select {
     gap: 12px;
 }
 .hero {
-    height: calc(100% - 62px);
+    height: calc(100% - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ nav button ,select {
     position: relative;
 }
 .secImg img {
-    width: 30vw;
+    width: 555px;
     position: relative;
     z-index: 10;
 }
@@ -216,4 +216,31 @@ nav button ,select {
 .sign button {
     padding: 7px 20px;
     font-weight: 500;
+}
+footer {
+    color: #b3b3b3;
+    max-width: 70vw;
+    margin: auto;
+    height: 50vh;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 14px;
+}
+.questions {
+    padding: 40px 0;
+}
+.questions a{
+    color: #b3b3b3;
+}
+.footer a {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
