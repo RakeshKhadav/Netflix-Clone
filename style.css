@@ -144,14 +144,16 @@ nav button ,select {
     z-index: 10;
 }
 .secImg video {
+    width: 555px;
     position: absolute;
-    top: 51px;
-    right: 0;
+    top: 70px;
+    right: 50px;
     width: 30vw;
 }
 .first > div {
     display: flex;
     flex-direction: column;
+    padding: 20px 0 0 0;
 }
 .first > div :nth-child(1) {
     font-size: 48px;
@@ -243,4 +245,20 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+@media screen and (max-width: 1300px){
+    .first {
+        flex-wrap: wrap;
+    }
+    .first > div {
+        padding: 20px 0 0 -20px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 14px;
+    }
 }
