@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", serif;
+    scroll-behavior: smooth;
 }
 body {
     background-color: black;
@@ -144,11 +145,10 @@ nav button ,select {
     z-index: 10;
 }
 .secImg video {
-    width: 555px;
+    width: 500px;
     position: absolute;
     top: 70px;
     right: 50px;
-    width: 30vw;
 }
 .first > div {
     display: flex;
@@ -163,13 +163,14 @@ nav button ,select {
     font-size: 20px;
 }
 .third img {
-    width: 32vw;
+    width: 555px;
 }
 .third video {
-    width: 400px;
+    width: 350px;
+    height: auto;
     position: absolute;
-    top: 28px;
-    right: 52px;
+    top: 70px;
+    right: 100px;
 }
 .faq {
     color: white;
@@ -246,19 +247,84 @@ footer {
     flex-direction: column;
     gap: 16px;
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 723px) {
+    .main {
+        height: 80vh;
+    }    
+}
+
+@media screen and ((max-width: 1300px) and (min-width: 800px)){
     .first {
         flex-wrap: wrap;
+        height: 80vh;
     }
     .first > div {
-        padding: 20px 0 0 -20px;
+        padding: 0;
+        text-align: center;
     }
-}
-@media screen and (max-width: 1300px){
+    .second {
+        height: 90vh;
+    }
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         color: white;
         padding: 14px;
+        gap: 23px;
+    }
+}
+@media screen and ((max-width: 800px)  and (min-width: 600px)){
+    .first {
+        flex-wrap: wrap;
+        height: 80vh;
+    }
+    .first > div {
+        padding: 0;
+        text-align: center;
+    }
+    .first > div :nth-child(1){
+        font-size: 36px;
+    }
+    .first > div :nth-child(2){
+        font-size: 18px;
+    }
+    .second {
+        height: 90vh;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 14px;
+        gap: 23px;
+    }
+}
+@media screen and (max-width: 600px){
+    .first {
+        flex-wrap: wrap;
+        height: 80vh;
+    }
+    .first > div {
+        padding: 0;
+        text-align: center;
+    }
+    .first > div :nth-child(1){
+        font-size: 36px;
+    }
+    .first > div :nth-child(2){
+        font-size: 18px;
+    }
+    .second {
+        height: 90vh;
+    }
+    .forth {
+        height: 90vh;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 14px;
+        gap: 23px;
     }
 }
